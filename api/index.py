@@ -50,4 +50,4 @@ def auth_and_fetch_balance(credentials, csrf_token, cookies):
     raw_data = json.loads(portal.text)
     return raw_data["balances"][0]["balance"]
 
-app.run(debug=True, host='0.0.0.0', port=80)
+app.run(debug=False, host='0.0.0.0', port=80)
